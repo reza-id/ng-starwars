@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 import { MoviesModule } from './modules/movies/movies.module';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -24,6 +27,7 @@ import { PageNotFoundComponent } from './components/page-not-found.component';
     FormsModule,
     HttpModule,
     MoviesModule,
+    MaterialModule,
     AppRoutingModule
   ],
   providers: [],
