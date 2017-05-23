@@ -5,8 +5,11 @@ import { MovieComponent } from './components/movie/movie.component';
 import { MoviesService } from './services/movies.service';
 import { MoviesRoutingModule } from './movies-routing.module';
 
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 @NgModule({
-    imports: [CommonModule, MoviesRoutingModule],
+    imports: [CommonModule, MaterialModule, MoviesRoutingModule],
     declarations: [MoviesListComponent, MovieComponent],
     providers: [MoviesService]
 })
